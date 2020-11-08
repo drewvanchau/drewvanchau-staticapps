@@ -6,16 +6,19 @@
       <div class="col-sm-12 col-md-6 offset-lg-3 offset-md-4">
           <h1>A PIRATE'S LIFE FOR ME</h1>
             <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
-      
+      </div>
+
+      <article class="container">
+      <div class="col-sm-12 col-md-6 offset-lg-3 offset-md-4" style= text-align:center>
       <h3>BLOG POSTS</h3>
         <div class="row">
         {% for blogs in blog.blogs %}
-       <div class="col-sm-6 col-lg-4">
+       <div class="col-lg-6 offset-lg-3 offset-md-4" style= text-align:center>
           <div class="card text-white bg-dark mb-4">
             <div class="card-body">
               <h5 class="card-title">{{ blogs.headline }}</h5>
               <p class="card-text">{{ blogs.date }}</p>
-              <a href="../src/html/{{ blogs.slug }}.html " >Article</a>
+              <a href="../blog/{{ blogs.slug }}.html " >Article</a>
             </div>
           </div>
         </div>
@@ -23,5 +26,4 @@
       {% endfor %}
       </div>
   </div>
-</div>
 {% endblock %}
